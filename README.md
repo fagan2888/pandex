@@ -1,5 +1,5 @@
 ### pandex
-========
+
 _A graphical data exploration tool based on pandas_
 
 The *pandex* package is intended to make exploratory data analysis (EDA) a little easier for everybody, with 
