@@ -13,6 +13,7 @@ from bokeh.models import ColumnDataSource
 from bokeh.models.widgets import Slider, TextInput
 from bokeh.plotting import figure
 from bokeh.io import show
+from bokeh.client import push_session, pull_session
 
 
 titanic_filename = "D:\\Kaggle\\Titanic\\train.csv"
@@ -76,4 +77,6 @@ inputs = column(text, offset, amplitude, phase, freq)
 curdoc().add_root(row(inputs, plot, width=800))
 curdoc().title = "Sliders"
 
-show(plot)
+session = push_session(curdoc())
+session.show()
+

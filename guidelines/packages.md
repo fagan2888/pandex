@@ -1,9 +1,3 @@
----
-title: "Pandex Development Guidelines - Packages"
-output: 
-  html_document:
-    number_sections: true
----
 # Pandex Development Guidelines - Packages
 *2019-04-10*
 
